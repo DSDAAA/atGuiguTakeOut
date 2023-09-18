@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="generator.mapper.OrderdetailMapper">
+<mapper namespace="com.dsdaaa.atguigutakeout.mapper.OrderdetailMapper">
 
-    <resultMap id="BaseResultMap" type="generator.domain.Orderdetail">
+    <resultMap id="BaseResultMap" type="com.dsdaaa.atguigutakeout.domain.Orderdetail">
             <id property="detailid" column="detailid" jdbcType="VARCHAR"/>
             <result property="orderid" column="orderid" jdbcType="VARCHAR"/>
             <result property="productid" column="productid" jdbcType="VARCHAR"/>

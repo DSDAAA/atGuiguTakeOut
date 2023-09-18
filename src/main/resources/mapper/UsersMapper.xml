@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="generator.mapper.UsersMapper">
+<mapper namespace="com.dsdaaa.atguigutakeout.mapper.UsersMapper">
 
-    <resultMap id="BaseResultMap" type="generator.domain.Users">
+    <resultMap id="BaseResultMap" type="com.dsdaaa.atguigutakeout.domain.Users">
             <id property="userid" column="userid" jdbcType="INTEGER"/>
             <result property="username" column="username" jdbcType="VARCHAR"/>
             <result property="phone" column="phone" jdbcType="VARCHAR"/>

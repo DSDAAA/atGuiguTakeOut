@@ -4,8 +4,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @author dsdaaa
  * @param <T>
+ * @author dsdaaa
  */
 @Data
 @NoArgsConstructor
@@ -17,6 +17,12 @@ public class Result<T> {
     public Result(Integer code, String msg, T data) {
         this.code = code;
         this.msg = msg;
+        this.data = data;
+    }
+
+    public Result(Code codes, T data) {
+        this.code = codes.getCode();
+        this.msg = codes.getMsg();
         this.data = data;
     }
 

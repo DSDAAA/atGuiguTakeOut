@@ -2,24 +2,25 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="generator.mapper.FoodMapper">
+<mapper namespace="com.dsdaaa.atguigutakeout.mapper.FoodMapper">
 
-    <resultMap id="BaseResultMap" type="generator.domain.Food">
-            <id property="foodid" column="foodid" jdbcType="VARCHAR"/>
-            <result property="foodname" column="foodname" jdbcType="VARCHAR"/>
-            <result property="foodprice" column="foodprice" jdbcType="DOUBLE"/>
-            <result property="fooddesc" column="fooddesc" jdbcType="VARCHAR"/>
-            <result property="foodicon" column="foodicon" jdbcType="VARCHAR"/>
-            <result property="foodimage" column="foodimage" jdbcType="VARCHAR"/>
-            <result property="foodtypeid" column="foodtypeid" jdbcType="INTEGER"/>
-            <result property="foodstatus" column="foodstatus" jdbcType="INTEGER"/>
-            <result property="foodcount" column="foodcount" jdbcType="INTEGER"/>
-            <result property="createtime" column="createtime" jdbcType="DATE"/>
-            <result property="updatetime" column="updatetime" jdbcType="TIMESTAMP"/>
+    <resultMap id="BaseResultMap" type="com.dsdaaa.atguigutakeout.domain.Food">
+        <id property="foodid" column="foodid" jdbcType="VARCHAR"/>
+        <result property="foodname" column="foodname" jdbcType="VARCHAR"/>
+        <result property="foodprice" column="foodprice" jdbcType="DOUBLE"/>
+        <result property="fooddesc" column="fooddesc" jdbcType="VARCHAR"/>
+        <result property="foodicon" column="foodicon" jdbcType="VARCHAR"/>
+        <result property="foodimage" column="foodimage" jdbcType="VARCHAR"/>
+        <result property="foodtypeid" column="foodtypeid" jdbcType="INTEGER"/>
+        <result property="foodstatus" column="foodstatus" jdbcType="INTEGER"/>
+        <result property="foodcount" column="foodcount" jdbcType="INTEGER"/>
+        <result property="createtime" column="createtime" jdbcType="DATE"/>
+        <result property="updatetime" column="updatetime" jdbcType="TIMESTAMP"/>
     </resultMap>
 
     <sql id="Base_Column_List">
-        foodid,foodname,foodprice,
+        foodid
+        ,foodname,foodprice,
         fooddesc,foodicon,foodimage,
         foodtypeid,foodstatus,foodcount,
         createtime,updatetime
