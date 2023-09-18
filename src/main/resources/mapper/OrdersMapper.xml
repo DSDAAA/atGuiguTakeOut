@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="generator.mapper.OrdersMapper">
+
+    <resultMap id="BaseResultMap" type="generator.domain.Orders">
+            <id property="orderId" column="orderId" jdbcType="VARCHAR"/>
+            <result property="openid" column="openid" jdbcType="VARCHAR"/>
+            <result property="buyerName" column="buyerName" jdbcType="VARCHAR"/>
+            <result property="buyerPhone" column="buyerPhone" jdbcType="VARCHAR"/>
+            <result property="buyerAddress" column="buyerAddress" jdbcType="VARCHAR"/>
+            <result property="orderAmount" column="orderAmount" jdbcType="DOUBLE"/>
+            <result property="orderStatus" column="orderStatus" jdbcType="INTEGER"/>
+            <result property="payStatus" column="payStatus" jdbcType="INTEGER"/>
+            <result property="orderdesc" column="orderdesc" jdbcType="VARCHAR"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        orderId,openid,buyerName,
+        buyerPhone,buyerAddress,orderAmount,
+        orderStatus,payStatus,orderdesc,
+        createTime,updateTime
+    </sql>
+</mapper>

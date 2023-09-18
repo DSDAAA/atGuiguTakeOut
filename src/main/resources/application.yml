@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url:
+    password:
+    username:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  servlet:
+    context-path: buyer
