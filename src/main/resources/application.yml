@@ -12,7 +12,7 @@ server:
     context-path: /buyer
 mybatis-plus:
   configuration:
-    map-underscore-to-camel-case: true
+    map-underscore-to-camel-case: false
   servlet:
     multipart:
       max-file-size: 10MB
